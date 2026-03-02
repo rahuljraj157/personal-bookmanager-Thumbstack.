@@ -40,7 +40,7 @@ This application allows users to manage their personal reading collection with f
 
 #1️⃣ Clone the repository
 ```bash
-git clone personal-bookmanager-Thumbstack
+git clone https://github.com/rahuljraj157/personal-bookmanager-Thumbstack..git
 cd personal-book-manager
 ```
 
