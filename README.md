@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# personal-bookmanager-Thumbstack.
 
-First, run the development server:
 
+A full-stack book management application built using Next.js (App Router), TypeScript, MongoDB, and Tailwind CSS.
+
+This application allows users to manage their personal reading collection with full CRUD functionality, tagging, filtering, and responsive design.
+
+
+
+
+---
+# 🚀 Features
+
+- ✅ Add new books  
+- ✅ Edit book details (Title, Author, Tags)  
+- ✅ Delete books with confirmation  
+- ✅ Update reading status (Want to Read, Reading, Completed)  
+- ✅ Filter books by reading status  
+- ✅ Filter books by tags  
+- ✅ Combined filtering (Status + Tag)  
+- ✅ Responsive mobile-friendly layout  
+- ✅ Type-safe implementation with TypeScript
+- ✅ protected routes and jwt authentication
+
+---
+
+# Tech Stack
+
+- Frontend: Next.js (App Router)
+- Language: TypeScript
+- Database: MongoDB
+-Styling: Tailwind CSS
+- API Handling: Next.js API Routes
+- State Management: React Hooks (useState)
+- Routing: Next.js Navigation
+
+---
+## Installation
+
+#1️⃣ Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone personal-bookmanager-Thumbstack
+cd personal-book-manager
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2️⃣ Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🔐 Environment Variables
 
-## Learn More
+Create a .env.local file in the root directory:
 
-To learn more about Next.js, take a look at the following resources:
+MONGODB_URI=your_mongodb_connection_string
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
+▶️ Running the Application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start development server:
+```bash
+npm run dev
+```
+Open your browser and visit:
+```bash
+http://localhost:3000
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# API Endpoints
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##Method	Endpoint	Description
+- GET	/api/books	Fetch all books
+- POST	/api/books	Add new book
+- PUT	/api/books/:id	Update book
+- DELETE	/api/books/:id	Delete book
+
+---
+
+# UI Highlights
+
+- Glassmorphism card design
+- Inline editing functionality
+- Dynamic tag badges
+- Status dropdown with emoji indicators
+- Mobile responsive layout (iPhone optimized)
+
+
+---
+
+# Future Improvements
+
+- Toast notifications
+- Authentication system
+- Dark/Light mode toggle
+- Pagination support
+- Dashboard analytics
+
+---
+# Author
+
+- Rahul J Raj
+- Self-learned MERN Stack Developer
+- This project demonstrates strong understanding of:
+- Full CRUD operations
+- REST API design
+- State management
+- TypeScript usage
+- Responsive UI development
+- Clean component architecture
+
+
