@@ -1,0 +1,21 @@
+import jwt from "jsonwebtoken";
+import { cookies } from "next/headers";
+
+export async function verifyUser(): Promise<string | null> {
+  const cookieStore = await cookies(); // ✅ must await
+
+  const token = cookieStore.get("token")?.value;
+
+  if (!token) return null;
+
+  try {
+    const decoded = jwt.verify(
+      token,
+      process.env.JWT_SECRET as string
+    ) as { userId: string };
+
+    return decoded.userId;
+  } catch {
+    return null;
+  }
+}
