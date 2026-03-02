@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { cookies } from "next/headers";
 
 export async function verifyUser(): Promise<string | null> {
-  const cookieStore = await cookies(); // ✅ must await
+  const cookieStore = await cookies();
 
   const token = cookieStore.get("token")?.value;
 
